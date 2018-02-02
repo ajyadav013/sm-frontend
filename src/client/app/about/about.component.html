@@ -1,0 +1,25 @@
+<sd-toolbar></sd-toolbar>
+<sd-navbar></sd-navbar>
+
+<h2 i18n>FrontEnd Features</h2>
+<ul>
+  <li>Used Angular 4</li>
+  <li>Ready to go, statically typed build system using Gulp for working with TypeScript.</li>
+  <li>Production and development builds.</li>
+  <li>Development server with live reload.</li>
+  <li>TypeScript definition management using Types.</li>
+  <li>Basic Service Worker, which implements "Cache then network strategy".</li>
+  <li>MeView service so that only authenticated ones can view the home page else go to login page using router canActivate via AuthGuard</li>
+</ul>
+
+<h2 i18n>BackendEnd Features</h2>
+<ul>
+    <li>Used Django</li>
+    <li>Knox login-logout functionality so as to access from multiple devices</li>
+    <li>Only frontend server allowed on allowed_hosts for backend accessibility</li>
+    <li>Need to add a local.py file for backend functionality for development purposes which includes the secret key and is a replica of local_template.py</li>
+    <li>Used SQLite database, I would prefer using Postgres with pgBouncer for connection pooling</li>
+    <li>Waitress can be configured to gunicorn workers or other servers with nginx configuration other than heroku, heroku itself provides load balancing with nginx</li>
+    <li>Installed Memcache and used locally, didnt setup for production. Can use different addons if used in heroku</li>
+    <li>Installed Celery but didnt use, can be used for sending email</li>
+</ul>
